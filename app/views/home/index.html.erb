@@ -1,0 +1,33 @@
+<div class="col-sm-12">
+<%= link_to 'ABOUT', about_path %>
+<%= link_to 'SCRIPTS', scripts_path %>
+
+<h1>Stop Steve Bannon</h1>
+<% @states.each do |state, pols| %>
+  <h2><%= state %></h2>
+  <table>
+    <tr>
+      <th class="col-md-1" align="left">Position</th>
+      <th class="col-md-2" align="left">First Name</th>
+      <th class="col-md-2" align="left">Last Name</th>
+      <th class="col-md-2" align="left">Party</th>
+      <th class="col-md-2" align="left">Denounced Bannon?</th>
+      <th class="col-md-2" align="left">Phone</th>
+    </tr>
+  <% pols.each do |data| %>
+    <tr>
+      <td><%= data.position=='Sen' ? 'Sen' : 'Rep' %></td>
+      <td><%= data.first_name %></td>
+      <td><%= data.last_name %></td>
+      <td><%= data.party=='D' ? 'Democrat' : 'Republican'%> </td>
+      <td><%= data.denounced ? 'Denounced' : 'Call him/her!'%></td>
+      <td><%= data.phone %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
+<div class="col-sm-12">
+
+<div class = 'contact'>
+  Contact: salinawu at uchicago dot edu
+</div>
