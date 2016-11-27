@@ -8876,3 +8876,65 @@ Processing by HomeController#index as HTML
   [1m[35mPolitician Load (7.4ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
   Rendered home/index.html.erb within layouts/application (36.7ms)
 Completed 200 OK in 565ms (Views: 478.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:20:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mPolitician Load (17.7ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
+  Rendered home/index.html.erb within layouts/application (250.3ms)
+Completed 200 OK in 435ms (Views: 289.9ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:29:18 -0500
+Processing by HomeController#index as HTML
+  [1m[35mPolitician Load (179.9ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
+  Rendered home/index.html.erb within layouts/application (199.8ms)
+Completed 200 OK in 1174ms (Views: 359.4ms | ActiveRecord: 179.9ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:29:57 -0500
+Processing by HomeController#index as HTML
+  [1m[36mPolitician Load (111.1ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
+  Rendered home/index.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 387ms (Views: 140.9ms | ActiveRecord: 111.1ms)
+
+
+Started GET "/assets/application.self-c960675b139ff6f49c9d19f67446cdfff1f0f4ba0ddaa87d835edda8fa9c00aa.css?body=1" for ::1 at 2016-11-26 19:29:58 -0500
+
+
+Started GET "/home/about" for ::1 at 2016-11-26 19:30:02 -0500
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/scripts" for ::1 at 2016-11-26 19:30:03 -0500
+Processing by HomeController#scripts as HTML
+  Rendered home/scripts.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:30:21 -0500
+Processing by HomeController#index as HTML
+  [1m[35mPolitician Load (10.7ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
+  Rendered home/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 170ms (Views: 102.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/home/scripts" for ::1 at 2016-11-26 19:30:22 -0500
+Processing by HomeController#scripts as HTML
+  Rendered home/scripts.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:30:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mPolitician Load (7.2ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
+  Rendered home/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 177ms (Views: 64.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/home/about" for ::1 at 2016-11-26 19:30:25 -0500
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
