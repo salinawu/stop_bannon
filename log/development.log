@@ -8843,3 +8843,36 @@ Processing by HomeController#index as HTML
   [1m[36mPolitician Load (16.7ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
   Rendered home/index.html.erb within layouts/application (278.2ms)
 Completed 200 OK in 439ms (Views: 338.8ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:15:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x007f95eeaec2a8>):
+  app/models/politician.rb:2:in `<class:Politician>'
+  app/models/politician.rb:1:in `<top (required)>'
+  app/controllers/home_controller.rb:5:in `index'
+
+
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.3ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (157.8ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/salinawu/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (279.9ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:17:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mPolitician Load (7.4ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
+  Rendered home/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 565ms (Views: 478.3ms | ActiveRecord: 8.2ms)
