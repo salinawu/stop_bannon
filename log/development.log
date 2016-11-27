@@ -8821,3 +8821,18 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-26 18:42:30 -0500
+
+
+Started GET "/" for ::1 at 2016-11-26 19:07:57 -0500
+Processing by HomeController#index as HTML
+  [1m[36mPolitician Load (104.6ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
+  Rendered home/index.html.erb within layouts/application (129.5ms)
+Completed 200 OK in 848ms (Views: 246.8ms | ActiveRecord: 104.6ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:08:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mPolitician Load (3.9ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
+  Rendered home/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 490ms (Views: 426.7ms | ActiveRecord: 4.3ms)
