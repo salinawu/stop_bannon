@@ -8836,3 +8836,10 @@ Processing by HomeController#index as HTML
   [1m[35mPolitician Load (3.9ms)[0m  SELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC
   Rendered home/index.html.erb within layouts/application (39.6ms)
 Completed 200 OK in 490ms (Views: 426.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 19:11:30 -0500
+Processing by HomeController#index as HTML
+  [1m[36mPolitician Load (16.7ms)[0m  [1mSELECT "politicians".* FROM "politicians"  ORDER BY "politicians"."last_name" ASC[0m
+  Rendered home/index.html.erb within layouts/application (278.2ms)
+Completed 200 OK in 439ms (Views: 338.8ms | ActiveRecord: 16.7ms)
